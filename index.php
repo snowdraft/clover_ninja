@@ -1,15 +1,12 @@
 <?php
-$_hash = array();
+$_string = NULL;
 $_random = array();
 $_songx = array();
 $_random[0] = "BIHrkqBFUL4";//Let Her Go
 $_random[1] = "lAwYodrBr2Q";//Lost at Sea
 $_random[2] = "J7bwSk5pCsg";//Time to Say Goodbye
-$_hash[0] = "Let Her Go - Passenger";
-$_hash[1] = "Lost at Sea - Dave Thomas Junior";
-$_hash[2] = "Time to Say Goodbye - Bocelli";
+$_random[3] = "ubBmqOtnJhI";//One of these Days
 $_songs = rand(0,count($_random)-1);
-$_string = NULL;
 $_video = $_random[$_songs];
 $content = file_get_contents("http://youtube.com/get_video_info?video_id=".$_video);
 $youtube = array("title"=>"YouTube Stream ..");
