@@ -9,9 +9,15 @@ $_random[3] = "ubBmqOtnJhI";//One of these Days
 $_songs = rand(0,count($_random)-1);
 $_video = $_random[$_songs];
 $content = file_get_contents("http://youtube.com/get_video_info?video_id=".$_video);
-$youtube = array("title"=>"YouTube Stream ..");
-parse_str($content,$youtube);
-$_hash_title = $youtube['title'];
+$youtube = array();
+$youtube["title"] = NULL;
+if(!empty($youtube["title"])){
+	parse_str($content,$youtube);
+	$_hash_title = $youtube["title"];
+}elseif(empty($youtube["title"])){
+	$youtube["title"] = "Default";
+	$_hash_title = $youtube["title"];
+}//========================================
 //=========================================
 $_hash_photo = "//img.youtube.com/vi/".$_video."/hqdefault.jpg";
 //=========================================
