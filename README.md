@@ -1,7 +1,8 @@
-# clover_ninja
-Beta
+# Clover Ninja
+Beta:
+
 v0.0000
 # New
-Beta:
+Beta: (v0.0000)
 
 ( Playlist )
