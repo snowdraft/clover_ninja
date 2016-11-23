@@ -6,3 +6,5 @@ v0.0000
 Beta: (v0.0000)
 
 ( Playlist )
+( Gallery )
+( Asset Store )
